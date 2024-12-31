@@ -36,9 +36,9 @@ export default function Features() {
                 <Button className="mt-16">Try it Now</Button>
               </div>
               <div className="flex flex-shrink-0 justify-center">
-                <div className="relative flex size-[270px] flex-shrink-0 md:size-[450px]">
+                <div className="relative flex size-[300px] flex-shrink-0 md:size-[450px]">
                   <div className="absolute inset-0">
-                    <Orbit className="size-[270px] md:size-[450px]" />
+                    <Orbit className="size-[270px] md:size-[400px]" />
                   </div>
                   <div className="absolute-center">
                     <Orbit className="size-[180px] md:size-[300px]" />

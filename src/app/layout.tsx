@@ -1,22 +1,22 @@
-import type { Metadata } from "next";
-import { Sora, Space_Grotesk } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Sora, Space_Grotesk } from 'next/font/google';
+import './globals.css';
 
 const soraFont = Sora({
-  subsets: ["latin"],
-  variable: "--font-sora",
-  weight: "variable",
+  subsets: ['latin'],
+  variable: '--font-sora',
+  weight: 'variable',
 });
 
 const spaceGroteskFont = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-  weight: "variable",
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+  weight: 'variable',
 });
 
 export const metadata: Metadata = {
-  title: "sphereal.ai",
-  description: "Created by @mainishanhoon",
+  title: 'sphereal.ai',
+  description: 'Created by @mainishanhoon',
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${soraFont.variable} ${spaceGroteskFont.variable} antialiased bg-gray-950 text-gray-300 font-body`}
+        className={`${soraFont.variable} ${spaceGroteskFont.variable} bg-gray-950 font-body text-gray-300 antialiased`}
       >
         {children}
       </body>

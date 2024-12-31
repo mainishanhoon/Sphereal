@@ -3,15 +3,15 @@ import { ButtonProps } from '@/types/types';
 export const navItems = [
   {
     name: 'Features',
-    href: '#features',
+    href: 'features',
   },
   {
     name: 'Pricing',
-    href: '#pricing',
+    href: 'pricing',
   },
   {
     name: 'Testimonials',
-    href: '#testimonials',
+    href: 'testimonials',
   },
 ];
 

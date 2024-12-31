@@ -1,16 +1,17 @@
 import { cva } from 'class-variance-authority';
 import { HTMLAttributes } from 'react';
 
-const classes = cva(
-  'size-8 rounded-full bg-gradient-to-b from-violet-400 to-gray-950',
-  {
-    variants: {
-      size: { sm: 'size-4', md: 'size-6', lg: 'size-8' },
-      color: { violet: 'from-violet-400', teal: 'from-teal-400', fuchsia: 'from-fuchsia-400' },
+const classes = cva('rounded-full bg-gradient-to-b to-gray-950', {
+  variants: {
+    size: { sm: 'size-4', md: 'size-6', lg: 'size-8' },
+    color: {
+      violet: 'from-violet-400',
+      teal: 'from-teal-400',
+      fuchsia: 'from-fuchsia-400',
     },
-    defaultVariants: { size: 'lg', color: 'violet' },
   },
-);
+  defaultVariants: { size: 'md', color: 'violet' },
+});
 
 export default function Planet(
   props: {
@@ -25,6 +26,6 @@ export default function Planet(
         color: props.color,
         className: props.className,
       })}
-    ></div>
+    />
   );
 }

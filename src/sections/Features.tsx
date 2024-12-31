@@ -41,7 +41,7 @@ export default function Features() {
                     <Orbit className="size-[270px] md:size-[400px]" />
                   </div>
                   <div className="absolute-center">
-                    <Orbit className="size-[180px] md:size-[300px]" />
+                    <Orbit className="size-[150px] md:size-[250px]" />
                   </div>
                   <div className="absolute-center">
                     <Logo className="size-24" />
